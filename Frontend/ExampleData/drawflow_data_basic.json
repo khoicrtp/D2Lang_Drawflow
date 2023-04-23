@@ -1,0 +1,187 @@
+{
+  "drawflow": {
+    "Home": {
+      "data": {
+        "1": {
+          "id": 1,
+          "name": "object 1",
+          "data": {},
+          "class": "object 1",
+          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fab fa-object 1\"></i> object 1</div>\n </div>\n ",
+          "description": "<div> Server 10.90.64.20 </div> \n <div> Dev Server </div>",
+          "typenode": false,
+          "inputs": {
+            "input_1": {
+              "connections": [
+                {
+                  "node": "7",
+                  "input": "output_1"
+                }
+              ]
+            }
+          },
+          "outputs": {},
+          "pos_x": 1028,
+          "pos_y": 87
+        },
+        "2": {
+          "id": 2,
+          "name": "object 2",
+          "data": {
+            "channel": "channel_2"
+          },
+          "class": "object 2",
+          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fab fa-object 2-plane\"></i> object 2</div>\n <div class=\"box\">\n   <p>Send to object 2</p>\n   <p>select channel</p>\n   <select df-channel>\n     <option value=\"channel_1\">Channel 1</option>\n     <option value=\"channel_2\">Channel 1</option>\n     <option value=\"channel_3\">Channel 2</option>\n     <option value=\"channel_4\">Channel 3</option>\n   </select>\n </div>\n </div>\n ",
+          "typenode": false,
+          "inputs": {
+            "input_1": {
+              "connections": [
+                {
+                  "node": "7",
+                  "input": "output_1"
+                }
+              ]
+            }
+          },
+          "outputs": {},
+          "pos_x": 1032,
+          "pos_y": 184
+        },
+        "3": {
+          "id": 3,
+          "name": "object 3",
+          "data": {},
+          "class": "object 3",
+          "html": "\n <div>\n   <div class=\"title-box\"><i class=\"fas fa-at\"></i> object 3 </div>\n </div>\n ",
+          "typenode": false,
+          "inputs": {
+            "input_1": {
+              "connections": [
+                {
+                  "node": "4",
+                  "input": "output_1"
+                }
+              ]
+            }
+          },
+          "outputs": {},
+          "pos_x": 1033,
+          "pos_y": 439
+        },
+        "4": {
+          "id": 4,
+          "name": "object 4",
+          "data": {
+            "template": "Write your object 4"
+          },
+          "class": "object 4",
+          "html": "\n <div>\n   <div class=\"title-box\"><i class=\"fas fa-code\"></i> object 4</div>\n   <div class=\"box\">\n     Ger Vars\n     <textarea df-object 4></textarea>\n    </div>\n </div>\n ",
+          "typenode": false,
+          "inputs": {
+            "input_1": {
+              "connections": [
+                {
+                  "node": "6",
+                  "input": "output_1"
+                }
+              ]
+            }
+          },
+          "outputs": {
+            "output_1": {
+              "connections": [
+                {
+                  "node": "3",
+                  "output": "input_1"
+                },
+                {
+                  "node": "11",
+                  "output": "input_1"
+                }
+              ]
+            }
+          },
+          "pos_x": 607,
+          "pos_y": 304
+        },
+        "6": {
+          "id": 6,
+          "name": "github",
+          "data": {
+            "name": "https://github.com/jerosoler/Drawflow"
+          },
+          "class": "github",
+          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fab fa-github \"></i> Github Stars</div>\n <div class=\"box\">\n   <p>Enter repository url</p>\n <input type=\"text\" df-name>\n </div>\n </div>\n ",
+          "typenode": false,
+          "inputs": {},
+          "outputs": {
+            "output_1": {
+              "connections": [
+                {
+                  "node": "4",
+                  "output": "input_1"
+                }
+              ]
+            }
+          },
+          "pos_x": 341,
+          "pos_y": 191
+        },
+        "7": {
+          "id": 7,
+          "name": "object 7",
+          "data": {},
+          "class": "object 7",
+          "html": "\n <div>\n <div class=\"title-box\"><i class=\"fab fa-facebook\"></i>object 7</div>\n </div>\n ",
+          "typenode": false,
+          "inputs": {},
+          "outputs": {
+            "output_1": {
+              "connections": [
+                {
+                  "node": "1",
+                  "output": "input_1"
+                },
+                {
+                  "node": "2",
+                  "output": "input_1"
+                },
+                {
+                  "node": "11",
+                  "output": "input_1"
+                }
+              ]
+            }
+          },
+          "pos_x": 347,
+          "pos_y": 87
+        },
+        "11": {
+          "id": 11,
+          "name": "log",
+          "data": {},
+          "class": "log",
+          "html": "\n <div>\n   <div class=\"title-box\"><i class=\"fas fa-file-signature\"></i> Save log file </div>\n </div>\n ",
+          "typenode": false,
+          "inputs": {
+            "input_1": {
+              "connections": [
+                {
+                  "node": "4",
+                  "input": "output_1"
+                },
+                {
+                  "node": "7",
+                  "input": "output_1"
+                }
+              ]
+            }
+          },
+          "outputs": {},
+          "pos_x": 1031,
+          "pos_y": 363
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "nodes": [
+    {
+      "name": "hihi",
+      "inputs": 1,
+      "outputs": 1,
+      "posx": 100,
+      "posy": 200,
+      "class": "hihi-class",
+      "data": {
+        "datahere": "hihi_data"
+      },
+      "html": "HIHI"
+    },
+    {
+      "name": "haha",
+      "inputs": 1,
+      "outputs": 1,
+      "posx": 400,
+      "posy": 100,
+      "class": "haha-class",
+      "data": {
+        "datahere": "haha_data"
+      },
+      "html": "HAHA A"
+    },
+    {
+      "name": "haha2",
+      "inputs": 1,
+      "outputs": 1,
+      "posx": 400,
+      "posy": 300,
+      "class": "haha-class",
+      "data": {
+        "datahere": "haha2_data"
+      },
+      "html": "HAHA B"
+    }
+  ]
+}
